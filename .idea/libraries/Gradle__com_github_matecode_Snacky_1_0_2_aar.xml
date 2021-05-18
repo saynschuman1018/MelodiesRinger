@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.matecode:Snacky:1.0.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Snacky-1.0.2.aar/4d9c07c7e7cf7b989ba497546b00d7c0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Snacky-1.0.2.aar/4d9c07c7e7cf7b989ba497546b00d7c0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Snacky-1.0.2.aar/4d9c07c7e7cf7b989ba497546b00d7c0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/Snacky-1.0.2.aar/4d9c07c7e7cf7b989ba497546b00d7c0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
