@@ -121,7 +121,7 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
         onCreate(sqLiteDatabase)
     }
 
-    fun insertSong(title: String?, path: String?, albumart: String?, DateAdded: Long?, duration: Int?, size: Long?, year: Int?, composer: String?, album: String?, artist: String?): Boolean {
+    fun insertSong(title: String?, path: String?, albumart: String?, DateAdded: Long?, duration: Int?, size: Long?, year: Int?, composer: String?, album: String?, artist: String?, startTime: Int?, endTime: Int?, selected: Int?): Boolean {
         val db = this.writableDatabase
         db.insert(MUSIC_TABLE_NAME,
                 MUSIC_COLUMN_title to title,
@@ -137,7 +137,10 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
                 MUSIC_COLUMN_COMPOSER to composer,
                 MUSIC_COLUMN_Album to album,
                 MUSIC_COLUMN_Year to year,
-                MUSIC_COLUMN_block_suggestion to 0
+                MUSIC_COLUMN_block_suggestion to 0,
+                MUSIC_COLUMN_START_TIME to startTime,
+                MUSIC_COLUMN_END_TIME to endTime,
+                MUSIC_COLUMN_SELECTED to selected
         )
 
         return true
@@ -152,7 +155,7 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
         try {
             cursor = db.rawQuery(Query, arrayOf(path))
             if (cursor!!.count <= 0) {
-                insertSong(title, path, albumart, dateadded, duration, size, year, composer, album, artist)
+                insertSong(title, path, albumart, dateadded, duration, size, year, composer, album, artist, 0, duration, 0)
                 return false
             }
         } finally {
@@ -412,7 +415,10 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
                 cursor.getString(cursor.getColumnIndex(MUSIC_COLUMN_COMPOSER)),
                 cursor.getString(cursor.getColumnIndex(MUSIC_COLUMN_Album)),
                 cursor.getString(cursor.getColumnIndex(MUSIC_COLUMN_Artist)),
-                cursor.getString(cursor.getColumnIndex(MUSIC_COLUMN_Type)))
+                cursor.getString(cursor.getColumnIndex(MUSIC_COLUMN_Type)),
+                cursor.getInt(cursor.getColumnIndex(MUSIC_COLUMN_START_TIME)),
+                cursor.getInt(cursor.getColumnIndex(MUSIC_COLUMN_END_TIME)),
+                cursor.getInt(cursor.getColumnIndex(MUSIC_COLUMN_SELECTED)))
     }
 
 
@@ -421,7 +427,10 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
                 cursor.getString(cursor.getColumnIndex(MUSIC_Record_title)),
                 cursor.getString(cursor.getColumnIndex(MUSIC_Record_path)),
                 cursor.getLong(cursor.getColumnIndex(MUSIC_Record_Date)),
-                cursor.getInt(cursor.getColumnIndex(MUSIC_Record_Duration)), null, null, null, null, null, cursor.getString(cursor.getColumnIndex(MUSIC_Record_Type)))
+                cursor.getInt(cursor.getColumnIndex(MUSIC_Record_Duration)),
+                null, null, null, null, null,
+                cursor.getString(cursor.getColumnIndex(MUSIC_Record_Type)),
+                0, cursor.getInt(cursor.getColumnIndex(MUSIC_Record_Duration)), 0)
     }
 
     companion object {
@@ -455,7 +464,9 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
         val MUSIC_COLUMN_Duration = "duration"
         val MUSIC_COLUMN_Type = "type"
         val MUSIC_COLUMN_block_suggestion = "suggestion_block"
-
+        val MUSIC_COLUMN_START_TIME = "start_time"
+        val MUSIC_COLUMN_END_TIME = "end_time"
+        val MUSIC_COLUMN_SELECTED = "selected"
 
         /**
          * record history of all the user actions

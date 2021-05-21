@@ -28,18 +28,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0e1754-a1c7-451c-b584-220b364f73be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Activties/Activity_Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Activties/Activity_Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Database/DBHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Database/DBHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Models/MusicFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Models/MusicFile.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Utils/MediaStoreFetcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Utils/MediaStoreFetcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Melodies/Music/romantic-ringtone.mp3" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -62,6 +87,9 @@
       <recent name="com.nanosoft" />
       <recent name="nanosoft" />
       <recent name="com" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.nanosoft.melodies.Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -72,7 +100,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="MelodiesRinger.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -156,6 +184,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="433" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621518982798">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="433" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.728@0.0.1360.728" timestamp="1621518982798" />
     <state x="297" y="278" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1621364789701">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -164,29 +196,61 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="455" y="245" width="495" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1360.728@0.0.1360.728" timestamp="1621364807545" />
-    <state width="1317" height="221" key="GridCell.Tab.0.bottom" timestamp="1621366578722">
+    <state x="82" y="83" width="1176" height="544" key="AVDManager" timestamp="1621522721732">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="221" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621366578722" />
-    <state width="1317" height="221" key="GridCell.Tab.0.center" timestamp="1621366578722">
+    <state x="82" y="83" width="1176" height="544" key="AVDManager/0.0.1360.728@0.0.1360.728" timestamp="1621522721732" />
+    <state width="427" height="438" key="DebuggerActiveHint" timestamp="1621520149210">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="221" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621366578722" />
-    <state width="1317" height="221" key="GridCell.Tab.0.left" timestamp="1621366578722">
+    <state width="427" height="438" key="DebuggerActiveHint/0.0.1360.728@0.0.1360.728" timestamp="1621520149210" />
+    <state x="460" y="118" key="FileChooserDialogImpl" timestamp="1621524628490">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="221" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621366578722" />
-    <state width="1317" height="221" key="GridCell.Tab.0.right" timestamp="1621366578722">
+    <state x="460" y="118" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1621524628490" />
+    <state width="1317" height="186" key="GridCell.Tab.0.bottom" timestamp="1621525925486">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="221" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621366578722" />
+    <state width="1317" height="186" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621525925486" />
+    <state width="1317" height="186" key="GridCell.Tab.0.center" timestamp="1621525925486">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="186" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621525925486" />
+    <state width="1317" height="186" key="GridCell.Tab.0.left" timestamp="1621525925486">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="186" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621525925486" />
+    <state width="1317" height="186" key="GridCell.Tab.0.right" timestamp="1621525925486">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="186" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621525925486" />
     <state x="336" y="46" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1621363937837">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="336" y="46" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.728@0.0.1360.728" timestamp="1621363937837" />
-    <state x="473" y="111" width="587" height="592" key="find.popup" timestamp="1621365857865">
+    <state x="506" y="74" width="745" height="592" key="find.popup" timestamp="1621523615245">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="473" y="111" width="587" height="592" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621365857865" />
+    <state x="506" y="74" width="745" height="592" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1621523615245" />
+    <state x="336" y="162" key="run.anything.popup" timestamp="1621471695359">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1621471695359" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Utils/MediaStoreFetcher.kt</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Database/DBHelper.kt</url>
+          <line>151</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

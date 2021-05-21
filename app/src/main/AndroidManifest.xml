@@ -23,6 +23,9 @@
     <uses-permission android:name="com.android.vending.BILLING" />
 
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:name="com.nanosoft.melodies.UILapplication"
         android:allowBackup="true"
@@ -117,8 +120,13 @@
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <receiver android:name="com.nanosoft.melodies.Receivers.PhoneStateReceiver">
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
     </application>
-
-
 
 </manifest>

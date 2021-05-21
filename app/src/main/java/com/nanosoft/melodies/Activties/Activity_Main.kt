@@ -48,6 +48,7 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
     private var mSharedPref: SharedPref? = null
     private var mAuth: FirebaseAuth? = null
 
+    private var MY_PERMISSIONS_REQUEST_READ_PHONE_STATE = 1000;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -91,22 +92,51 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
 
 
     fun requestAppPermissions() {
-    if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-        return;
+
+        // Phone permissin to replace outgoing call
+        if (ContextCompat.checkSelfPermission(this,
+                        Manifest.permission.READ_PHONE_STATE)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                            Manifest.permission.READ_PHONE_STATE)) {
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+            } else {
+
+                // No explanation needed, we can request the permission.
+
+                ActivityCompat.requestPermissions(this,
+                        arrayOf(Manifest.permission.READ_PHONE_STATE),
+                        MY_PERMISSIONS_REQUEST_READ_PHONE_STATE);
+
+                // MY_PERMISSIONS_REQUEST_READ_PHONE_STATE is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }
+
+
+        if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            return;
+        }
+
+            Log.e("Permission" , "hasWritePermissions" + hasWritePermissions())
+        if (hasReadPermissions() && hasWritePermissions()) {
+            return;
+        }
+
+
+        ActivityCompat.requestPermissions(this,
+                arrayOf (
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE
+        ), 1); // your request code
     }
-
-        Log.e("Permission" , "hasWritePermissions" + hasWritePermissions())
-    if (hasReadPermissions() && hasWritePermissions()) {
-        return;
-    }
-
-
-    ActivityCompat.requestPermissions(this,
-            arrayOf (
-                    Manifest.permission.READ_EXTERNAL_STORAGE,
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE
-    ), 1); // your request code
-}
 
     private fun hasReadPermissions():Boolean {
     return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);

@@ -13,15 +13,17 @@ import android.content.Context
 import android.database.Cursor
 import android.net.Uri
 import android.provider.MediaStore
+import android.util.Log
 
 import com.nanosoft.melodies.Database.DBHelper
+import com.nanosoft.melodies.R
 
 /**
  * Created by Joseph27 on 5/6/16.
  */
 class MediaStoreFetcher(internal var mContext: Context) {
     internal var supportedformats = arrayOf("aac", "m4a", "AMR", "mp3", "wav")
-
+    var TAG = "MediaStoreFetcher"
 
     init {
         getMusicData()
@@ -37,11 +39,14 @@ class MediaStoreFetcher(internal var mContext: Context) {
             val projection = arrayOf(MediaStore.Audio.Media._ID, MediaStore.Audio.Media.ARTIST, MediaStore.Audio.Media.TITLE, MediaStore.Audio.Media.DATA, MediaStore.Audio.Media.ALBUM_ID, MediaStore.Audio.Media.DISPLAY_NAME, MediaStore.Audio.Media.DURATION, MediaStore.Audio.Media.DATE_ADDED, MediaStore.Audio.Media.DATE_MODIFIED, MediaStore.MediaColumns.SIZE, MediaStore.Audio.Media.ALBUM, MediaStore.Audio.Media.DURATION, MediaStore.Audio.Media.COMPOSER, MediaStore.Audio.Media.YEAR)
             cursor = mContext.contentResolver.query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, projection, selection, null, orderby)
 
+            Log.d(TAG, "Cursor Count : "  + cursor.count);
+
             if (cursor != null && cursor.count > 0) {
                 while (cursor.moveToNext()) {
                     val sArtworkUri = Uri.parse("content://media/external/audio/albumart")
                     val uri = ContentUris.withAppendedId(sArtworkUri, cursor.getLong(4))
-                    if (checkifFileissuppported(cursor.getString(3)) && cursor.getString(6) != null && Integer.parseInt(cursor.getString(6)) / 1000 >= 30) {
+                    if (checkifFileissuppported(cursor.getString(3)) && cursor.getString(3) != null
+                            && cursor.getString(3).contains(mContext.getString(R.string.app_name), ignoreCase = true)) {
                         dbHelper.checkandinsert(
                                 cursor.getString(2), // title
                                 cursor.getString(3), // path
