@@ -111,7 +111,9 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
                 // No explanation needed, we can request the permission.
 
                 ActivityCompat.requestPermissions(this,
-                        arrayOf(Manifest.permission.READ_PHONE_STATE),
+                        arrayOf(Manifest.permission.READ_PHONE_STATE,
+                                Manifest.permission.READ_EXTERNAL_STORAGE,
+                                Manifest.permission.WRITE_EXTERNAL_STORAGE),
                         MY_PERMISSIONS_REQUEST_READ_PHONE_STATE);
 
                 // MY_PERMISSIONS_REQUEST_READ_PHONE_STATE is an
@@ -125,28 +127,19 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
             return;
         }
 
-            Log.e("Permission" , "hasWritePermissions" + hasWritePermissions())
+        Log.e("Permission" , "hasWritePermissions" + hasWritePermissions())
         if (hasReadPermissions() && hasWritePermissions()) {
             return;
         }
-
-
-        ActivityCompat.requestPermissions(this,
-                arrayOf (
-                        Manifest.permission.READ_EXTERNAL_STORAGE,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE
-        ), 1); // your request code
     }
 
     private fun hasReadPermissions():Boolean {
-    return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
-}
+        return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
+    }
 
- fun hasWritePermissions():Boolean {
-
-    return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
-
-}
+    fun hasWritePermissions():Boolean {
+        return (ContextCompat.checkSelfPermission(getBaseContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
+    }
 
 
 
