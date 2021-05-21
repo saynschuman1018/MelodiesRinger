@@ -11,6 +11,8 @@ import android.telephony.TelephonyManager
 import android.util.Log
 import com.nanosoft.melodies.Database.DBHelper
 import com.nanosoft.melodies.Models.MusicFile
+import com.nanosoft.melodies.Utils.Constants
+import com.nanosoft.melodies.Utils.SharedPref
 import java.io.IOException
 
 
@@ -40,10 +42,12 @@ class PhoneStateReceiver : BroadcastReceiver() {
             } else if (state == TelephonyManager.EXTRA_STATE_OFFHOOK) {
                 Log.d(TAG, "PhoneStateReceiver **OffHook")
 
-
-                mContext = context
-                initStreamVolumn()
-                playRingBack()
+                val sharedPref = SharedPref(context)
+                if(sharedPref.LoadBoolean(Constants.ENABLE_RINGER, false) == true){
+                    mContext = context
+                    initStreamVolumn()
+                    playRingBack()
+                }
             }
         } else if (intent.action == "android.intent.action.NEW_OUTGOING_CALL") {
             // Outgoing call

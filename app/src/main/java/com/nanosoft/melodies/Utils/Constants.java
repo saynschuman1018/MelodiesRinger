@@ -57,10 +57,5 @@ public class Constants {
     public static String FIREBASE_MUISC_FEEDBACK_DESCRIPTION_NODE = "description";
     public static String FIREBASE_MUISC_FEEDBACK_TITLE_NODE = "title";
 
-
-
-
-
-
-
+    public static String ENABLE_RINGER = "enable_ringer";
 }
