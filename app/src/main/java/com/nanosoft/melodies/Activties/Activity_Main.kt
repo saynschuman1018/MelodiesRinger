@@ -217,7 +217,7 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
 //        if( History == true ) toolbar.setTitle(this.resources.getString(R.string.menu_history)) else  toolbar.setTitle(this.resources.getString(R.string.menu_home))
 //    }
 
-    private fun ChangeFragment(History: Boolean?) {
+    public fun ChangeFragment(History: Boolean?) {
         if(History == true) {
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, Fragment_Setting()).commit()
         } else
