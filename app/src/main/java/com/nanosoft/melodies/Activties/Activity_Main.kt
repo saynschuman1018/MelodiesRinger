@@ -80,7 +80,7 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
 
         Handler().postDelayed({
             com.nanosoft.melodies.Utils.MediaStoreFetcher(this)
-            ChangeFragment(true)
+            ChangeFragment(null)
         }, 200);
 
 
@@ -194,11 +194,12 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
         drawer_layout.closeDrawer(GravityCompat.START)
         when (IconRes) {
             R.drawable.ic_menu_home -> ChangeFragment(null)
-            R.drawable.ic_menu_history -> ChangeFragment(true)
-            R.drawable.ic_menu_gopro -> shareTextUrl()
-            R.drawable.ic_menu_sharing -> shareTextUrl()
-            R.drawable.ic_menu_suggestion -> shareTextUrl()
-            R.drawable.ic_menu_about -> startActivity(Intent(this, Activity_About::class.java))
+            R.drawable.ic_menu_settings -> ChangeFragment(true)
+//            R.drawable.ic_menu_history -> ChangeFragment(true)
+//            R.drawable.ic_menu_gopro -> shareTextUrl()
+//            R.drawable.ic_menu_sharing -> shareTextUrl()
+//            R.drawable.ic_menu_suggestion -> shareTextUrl()
+//            R.drawable.ic_menu_about -> startActivity(Intent(this, Activity_About::class.java))
             else -> startActivity(Intent(this, Activity_About::class.java))
         }
     }

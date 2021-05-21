@@ -35,21 +35,25 @@
 
     <integer-array name="menu_array">
         <item>@drawable/ic_menu_home</item>
-        <item>@drawable/ic_menu_history</item>
-        <item>@drawable/ic_menu_suggestion</item>
-        <item>@drawable/ic_menu_gopro</item>
-        <item>@drawable/ic_users_linear</item>
-        <item>@drawable/ic_menu_about</item>
+        <item>@drawable/ic_menu_settings</item>
+<!--        <item>@drawable/ic_menu_history</item>-->
+<!--        <item>@drawable/ic_menu_suggestion</item>-->
+<!--        <item>@drawable/ic_menu_gopro</item>-->
+<!--        <item>@drawable/ic_users_linear</item>-->
+<!--        <item>@drawable/ic_menu_about</item>-->
+
     </integer-array>
 
     <string-array name="MenuTitles">
 
         <item>@string/menu_home</item>
-        <item>@string/menu_history</item>
-        <item>@string/menu_smartsuggestion</item>
-        <item>@string/menu_gopro</item>
-        <item>SPACE</item>
-        <item>@string/menu_about</item>
+        <item>@string/menu_settings</item>
+
+<!--        <item>@string/menu_history</item>-->
+<!--        <item>@string/menu_smartsuggestion</item>-->
+<!--        <item>@string/menu_gopro</item>-->
+<!--        <item>SPACE</item>-->
+<!--        <item>@string/menu_about</item>-->
 
     </string-array>
 
