@@ -130,6 +130,10 @@
     <string name="e_error_loading">Error while loading sound file</string>
 
 
-
-
+    <string name="settings_enable_disable">Enable/Disable MelodiesRinger</string>
+    <string name="settings_select_file">Select file to play</string>
+    <string name="settings_select_button">SELECT...</string>
+    <string name="settings_about">MelodiesRinger - Software which allow to play music instead waiting rings during outgoing call.
+    For normal running of application, allow in general settings permissions to use Phone Activity and Access to Media Files</string>
+    <string name="settings_version">Version-1.0a</string>
 </resources>

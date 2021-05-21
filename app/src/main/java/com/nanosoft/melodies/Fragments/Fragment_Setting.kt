@@ -17,6 +17,6 @@ class Fragment_Setting : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? =
-            inflater?.inflate(R.layout.fragment_intropage, container, false)
+            inflater?.inflate(R.layout.fragment_settings, container, false)
 
 }
