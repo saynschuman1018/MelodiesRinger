@@ -39,7 +39,9 @@ class Activity_Intro : AppCompatActivity(), ViewPager.OnPageChangeListener, View
 
         val window = window
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)  window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        val FirstTime = SharedPref(this).LoadBoolean(Constants.FIRST_TIME,true)
+
+        // Hide introduction
+        val FirstTime = SharedPref(this).LoadBoolean(Constants.FIRST_TIME,false)
         if (FirstTime == false){
             StartMainActivity()
             finish()
