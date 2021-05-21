@@ -69,6 +69,10 @@
             android:name="com.nanosoft.melodies.Activties.Activity_About">
         </activity>
 
+        <activity
+            android:name="com.nanosoft.melodies.Activties.Activity_Setting">
+        </activity>
+
 <!--        <activity-->
 <!--            android:name="com.nanosoft.melodies.Activties.Activity_Feedback">-->
 <!--        </activity>-->

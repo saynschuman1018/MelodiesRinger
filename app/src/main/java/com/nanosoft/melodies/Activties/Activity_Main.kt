@@ -26,13 +26,17 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.SearchView
 import android.util.Log
-import android.view.*
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.nanosoft.melodies.Fragments.Fragment_Selection
-import com.nanosoft.melodies.R
 import com.nanosoft.melodies.Adapters.Adapter_Menu
-import com.nanosoft.melodies.Utils.*
+import com.nanosoft.melodies.Fragments.Fragment_Selection
+import com.nanosoft.melodies.Fragments.Fragment_Setting
+import com.nanosoft.melodies.R
+import com.nanosoft.melodies.Utils.Constants
+import com.nanosoft.melodies.Utils.SharedPref
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -53,7 +57,7 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        this.window.decorView.setBackgroundColor(ContextCompat.getColor(this,R.color.app_decorview_color))
+        this.window.decorView.setBackgroundColor(ContextCompat.getColor(this, R.color.app_decorview_color))
         setContentView(R.layout.activity_main)
 
         requestAppPermissions()
@@ -76,18 +80,16 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
 
         Handler().postDelayed({
             com.nanosoft.melodies.Utils.MediaStoreFetcher(this)
-            ChangeFragment(null)
-        },200);
+            ChangeFragment(true)
+        }, 200);
 
 
 
         mSharedPref = SharedPref(this)
-        mSharedPref?.SaveBoolean(Constants.FIRST_TIME,false)
+        mSharedPref?.SaveBoolean(Constants.FIRST_TIME, false)
 
 
         RunBackGroundServices()
-
-
     }
 
 
@@ -127,7 +129,7 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
             return;
         }
 
-        Log.e("Permission" , "hasWritePermissions" + hasWritePermissions())
+        Log.e("Permission", "hasWritePermissions" + hasWritePermissions())
         if (hasReadPermissions() && hasWritePermissions()) {
             return;
         }
@@ -193,8 +195,8 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
         when (IconRes) {
             R.drawable.ic_menu_home -> ChangeFragment(null)
             R.drawable.ic_menu_history -> ChangeFragment(true)
-            R.drawable.ic_menu_gopro  -> shareTextUrl()
-            R.drawable.ic_menu_sharing  -> shareTextUrl()
+            R.drawable.ic_menu_gopro -> shareTextUrl()
+            R.drawable.ic_menu_sharing -> shareTextUrl()
             R.drawable.ic_menu_suggestion -> shareTextUrl()
             R.drawable.ic_menu_about -> startActivity(Intent(this, Activity_About::class.java))
             else -> startActivity(Intent(this, Activity_About::class.java))
@@ -208,10 +210,19 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
     }
 
 
+//    private fun ChangeFragment(History: Boolean?) {
+//        fragment = Fragment_Selection.newInstance(History)
+//        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+//        if( History == true ) toolbar.setTitle(this.resources.getString(R.string.menu_history)) else  toolbar.setTitle(this.resources.getString(R.string.menu_home))
+//    }
+
     private fun ChangeFragment(History: Boolean?) {
-        fragment = Fragment_Selection.newInstance(History)
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
-        if( History == true ) toolbar.setTitle(this.resources.getString(R.string.menu_history)) else  toolbar.setTitle(this.resources.getString(R.string.menu_home))
+        if(History == true) {
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, Fragment_Setting()).commit()
+        } else
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, Fragment_Selection.newInstance(History)).commit()
+
+        toolbar.setTitle(this.resources.getString(R.string.app_name))
     }
 
     override fun onDrawerSlide(drawerView: View, slideOffset: Float) {}
@@ -236,7 +247,10 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.select_options, menu)
         mSearchView = MenuItemCompat.getActionView(menu.findItem(R.id.menu_search)) as SearchView
-        menu.findItem(R.id.menu_search).isVisible = true
+
+        // Hide search bar
+        menu.findItem(R.id.menu_search).isVisible = false
+
         mSearchView!!.setIconifiedByDefault(false)
         mSearchView!!.isIconified = false
         mSearchView!!.clearFocus()
@@ -263,7 +277,7 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
         for (i in 0..permissions.size-1){
             val permission = permissions[i]
             val grantResult = grantResults[i]
-            Log.e("Permission " + permission , "Value" + grantResult);
+            Log.e("Permission " + permission, "Value" + grantResult);
         }
     }
 

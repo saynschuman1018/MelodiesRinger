@@ -127,7 +127,7 @@ class Activity_Intro : AppCompatActivity(), ViewPager.OnPageChangeListener, View
 
     override fun onPageSelected(position: Int) {
         SkipButtonController(position)
-         NextButtonController (position)
+        NextButtonController (position)
     }
 
 
