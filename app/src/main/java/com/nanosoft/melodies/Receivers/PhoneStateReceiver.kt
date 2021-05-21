@@ -1,5 +1,6 @@
 package com.nanosoft.melodies.Receivers
 
+import android.app.Application
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -8,7 +9,6 @@ import android.media.MediaPlayer
 import android.os.Handler
 import android.telephony.TelephonyManager
 import android.util.Log
-import com.google.android.gms.internal.mp
 import com.nanosoft.melodies.Database.DBHelper
 import com.nanosoft.melodies.Models.MusicFile
 import java.io.IOException
@@ -33,12 +33,16 @@ class PhoneStateReceiver : BroadcastReceiver() {
                 // Incoming call
                 val incomingNumber = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER)
                 Log.d(TAG, "PhoneStateReceiver**Incoming call $incomingNumber")
-                if (!killCall(context)) { // Using the method defined earlier
-                    Log.d(TAG, "PhoneStateReceiver **Unable to kill incoming call")
-                }
+
+//                if (!killCall(context)) { // Using the method defined earlier
+//                    Log.d(TAG, "PhoneStateReceiver **Unable to kill incoming call")
+//                }
             } else if (state == TelephonyManager.EXTRA_STATE_OFFHOOK) {
                 Log.d(TAG, "PhoneStateReceiver **OffHook")
 
+
+                mContext = context
+                initStreamVolumn()
                 playRingBack()
             }
         } else if (intent.action == "android.intent.action.NEW_OUTGOING_CALL") {
@@ -61,6 +65,9 @@ class PhoneStateReceiver : BroadcastReceiver() {
         if(selectedSongs == null)
             selectedSongs = dbHelper?.GetSongAsRingBack()
 
+        if(selectedSongs!!.size == 0)
+            return
+
         Log.d(TAG, "Size : " + selectedSongs!!.size)
         Log.d(TAG, "Current Index : " + currentRingBackIndex)
 
@@ -78,14 +85,14 @@ class PhoneStateReceiver : BroadcastReceiver() {
 
             val handler = Handler()
             val delay = currentPlaySong!!.endTime!!.minus(currentPlaySong!!.startTime!!)
-            handler.postDelayed(Runnable { if(isPlaying) playRingBack() }, ( delay * 1000).toLong())
+            handler.postDelayed(Runnable { if (isPlaying) playRingBack() }, (delay * 1000).toLong())
             isPlaying = true
         } catch (e: IOException) {
             e.printStackTrace()
         }
     }
 
-    fun stopRingBack(finalStop : Boolean){
+    fun stopRingBack(finalStop: Boolean){
         if(mediaPlayer != null){
             isPlaying = false
             mediaPlayer?.stop()
@@ -96,6 +103,7 @@ class PhoneStateReceiver : BroadcastReceiver() {
         if(finalStop){
             currentRingBackIndex = -1
             selectedSongs = null
+            restoreStreamVolumn()
         }
     }
 
@@ -127,6 +135,26 @@ class PhoneStateReceiver : BroadcastReceiver() {
         return true
     }
 
+    fun initStreamVolumn(){
+        val am = mContext?.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+        mOldVolumn = am.getStreamVolume(AudioManager.STREAM_MUSIC)
+
+        am.setStreamVolume(
+                AudioManager.STREAM_MUSIC,
+                am.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
+                0)
+    }
+
+    fun restoreStreamVolumn(){
+        val am = mContext?.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+        am.setStreamVolume(
+                AudioManager.STREAM_MUSIC,
+                mOldVolumn,
+                0)
+    }
+
     companion object {
         var TAG = "PhoneStateReceiver"
         var isPlaying = false
@@ -134,6 +162,7 @@ class PhoneStateReceiver : BroadcastReceiver() {
         var dbHelper : DBHelper? = null
         var currentRingBackIndex = -1
         var selectedSongs : ArrayList<MusicFile>? = null
-
+        var mContext : Context? = null
+        var mOldVolumn : Int = 0
     }
 }

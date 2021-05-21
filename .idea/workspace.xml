@@ -35,9 +35,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Fragments/Fragment_Setting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Fragments/Fragment_Setting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Receivers/PhoneStateReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Receivers/PhoneStateReceiver.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,12 +197,12 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="455" y="245" width="495" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1360.728@0.0.1360.728" timestamp="1621364807545" />
-    <state x="119" y="170" width="1246" height="673" key="AVDManager" timestamp="1621615879538">
+    <state x="-58" y="175" width="1246" height="673" key="AVDManager" timestamp="1621622047088">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="82" y="83" width="1176" height="544" key="AVDManager/0.0.1360.728@0.0.1360.728" timestamp="1621522721732" />
     <state x="-98" y="210" width="1246" height="643" key="AVDManager/1440.0.1360.728/0.0.1440.860@0.0.1440.860" timestamp="1621558079881" />
-    <state x="119" y="170" width="1246" height="673" key="AVDManager/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621615879538" />
+    <state x="-58" y="175" width="1246" height="673" key="AVDManager/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621622047088" />
     <state width="719" height="518" key="DebuggerActiveHint" timestamp="1621548859569">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -215,30 +213,30 @@
     </state>
     <state x="460" y="118" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1621524628490" />
     <state x="487" y="139" key="FileChooserDialogImpl/1440.0.1360.728/0.0.1440.860@0.0.1440.860" timestamp="1621549319066" />
-    <state width="1396" height="79" key="GridCell.Tab.0.bottom" timestamp="1621616839708">
+    <state width="1396" height="391" key="GridCell.Tab.0.bottom" timestamp="1621621545746">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1317" height="125" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1621614097480" />
     <state width="1396" height="222" key="GridCell.Tab.0.bottom/1440.0.1360.728/0.0.1440.860@0.0.1440.860" timestamp="1621560947855" />
-    <state width="1396" height="79" key="GridCell.Tab.0.bottom/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621616839708" />
-    <state width="1396" height="79" key="GridCell.Tab.0.center" timestamp="1621616839708">
+    <state width="1396" height="391" key="GridCell.Tab.0.bottom/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621621545746" />
+    <state width="1396" height="391" key="GridCell.Tab.0.center" timestamp="1621621545746">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1317" height="125" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1621614097480" />
     <state width="1396" height="222" key="GridCell.Tab.0.center/1440.0.1360.728/0.0.1440.860@0.0.1440.860" timestamp="1621560947855" />
-    <state width="1396" height="79" key="GridCell.Tab.0.center/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621616839708" />
-    <state width="1396" height="79" key="GridCell.Tab.0.left" timestamp="1621616839707">
+    <state width="1396" height="391" key="GridCell.Tab.0.center/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621621545746" />
+    <state width="1396" height="391" key="GridCell.Tab.0.left" timestamp="1621621545745">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1317" height="125" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1621614097480" />
     <state width="1396" height="222" key="GridCell.Tab.0.left/1440.0.1360.728/0.0.1440.860@0.0.1440.860" timestamp="1621560947855" />
-    <state width="1396" height="79" key="GridCell.Tab.0.left/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621616839707" />
-    <state width="1396" height="79" key="GridCell.Tab.0.right" timestamp="1621616839708">
+    <state width="1396" height="391" key="GridCell.Tab.0.left/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621621545745" />
+    <state width="1396" height="391" key="GridCell.Tab.0.right" timestamp="1621621545746">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1317" height="125" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1621614097480" />
     <state width="1396" height="222" key="GridCell.Tab.0.right/1440.0.1360.728/0.0.1440.860@0.0.1440.860" timestamp="1621560947855" />
-    <state width="1396" height="79" key="GridCell.Tab.0.right/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621616839708" />
+    <state width="1396" height="391" key="GridCell.Tab.0.right/1440.0.1360.768/0.0.1440.900@0.0.1440.900" timestamp="1621621545746" />
     <state width="1396" height="229" key="GridCell.Tab.1.bottom" timestamp="1621600622136">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -296,7 +294,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Receivers/PhoneStateReceiver.kt</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
@@ -306,12 +304,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Receivers/PhoneStateReceiver.kt</url>
-          <line>37</line>
+          <line>38</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/nanosoft/melodies/Receivers/PhoneStateReceiver.kt</url>
-          <line>113</line>
+          <line>121</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
