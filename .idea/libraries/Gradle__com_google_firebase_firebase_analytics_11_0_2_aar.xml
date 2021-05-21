@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.2.aar/967392bd653148659ddafd39315679e3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.2.aar/967392bd653148659ddafd39315679e3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.2.aar/967392bd653148659ddafd39315679e3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.2.aar/b5c5481a6a353b9f4f4611bd52ba0ae7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.2.aar/b5c5481a6a353b9f4f4611bd52ba0ae7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.2.aar/b5c5481a6a353b9f4f4611bd52ba0ae7/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

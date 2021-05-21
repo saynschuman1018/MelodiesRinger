@@ -14,13 +14,12 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.nanosoft.melodies.R
 import com.nanosoft.melodies.Models.MusicFile
+import com.nanosoft.melodies.R
 import com.nanosoft.melodies.Utils.SharedPref
 import org.jetbrains.anko.db.*
 import java.io.File
 import java.util.*
-
 
 
 /**
@@ -111,7 +110,10 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
                 MUSIC_COLUMN_Artist to TEXT,
                 MUSIC_COLUMN_Type to TEXT,
                 MUSIC_COLUMN_block_suggestion to INTEGER,
-                MUSIC_COLUMN_Date_Added to INTEGER
+                MUSIC_COLUMN_Date_Added to INTEGER,
+                MUSIC_COLUMN_START_TIME to INTEGER,
+                MUSIC_COLUMN_END_TIME to INTEGER,
+                MUSIC_COLUMN_SELECTED to INTEGER
         )
     }
 
@@ -268,6 +270,7 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
         return song
 
     }
+
 
 
     fun FilterMusicByDate(mlist: ArrayList<MusicFile>): ArrayList<MusicFile> {
@@ -431,6 +434,36 @@ class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABA
                 null, null, null, null, null,
                 cursor.getString(cursor.getColumnIndex(MUSIC_Record_Type)),
                 0, cursor.getInt(cursor.getColumnIndex(MUSIC_Record_Duration)), 0)
+    }
+
+    fun MarkSongAsRingBack(title: String, startTime: Int, endTime: Int) {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+
+        contentValues.put(MUSIC_COLUMN_START_TIME, startTime)
+        contentValues.put(MUSIC_COLUMN_END_TIME, endTime)
+        contentValues.put(MUSIC_COLUMN_SELECTED, 1)
+
+        db.update(MUSIC_TABLE_NAME, contentValues, "$MUSIC_COLUMN_title = '$title'", null)
+    }
+
+    fun GetSongAsRingBack() : ArrayList<MusicFile>{
+        var songArrayList : ArrayList<MusicFile> = ArrayList<MusicFile>()
+        var cursor: Cursor? = null
+        val db = this.readableDatabase
+        try {
+            cursor = db.rawQuery("Select * from $MUSIC_TABLE_NAME where $MUSIC_COLUMN_SELECTED = 1 ORDER BY RANDOM()", null)
+            cursor.moveToFirst()
+
+            while (!cursor.isAfterLast) {
+                val song = GetsongFromCurser(cursor)
+                songArrayList.add(song)
+                cursor.moveToNext()
+            }
+        } finally {
+            CloseCursor(cursor)
+        }
+        return songArrayList
     }
 
     companion object {

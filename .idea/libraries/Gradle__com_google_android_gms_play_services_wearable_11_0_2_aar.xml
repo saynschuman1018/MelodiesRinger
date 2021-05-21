@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.2.aar/86c03a8975784831e5ae9775e15ae14e/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.2.aar/86c03a8975784831e5ae9775e15ae14e/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.2.aar/86c03a8975784831e5ae9775e15ae14e/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.2.aar/ba2d9888f85d60aa5f499fd135b7133b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.2.aar/ba2d9888f85d60aa5f499fd135b7133b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.2.aar/ba2d9888f85d60aa5f499fd135b7133b/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

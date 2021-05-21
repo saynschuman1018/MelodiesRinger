@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.2.aar/6092cab5b81ca8878ba1b109a261fede/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.2.aar/6092cab5b81ca8878ba1b109a261fede/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.2.aar/6092cab5b81ca8878ba1b109a261fede/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.2.aar/f4a482f58c99d735dbd8e9a042dd1622/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.2.aar/f4a482f58c99d735dbd8e9a042dd1622/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.2.aar/f4a482f58c99d735dbd8e9a042dd1622/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

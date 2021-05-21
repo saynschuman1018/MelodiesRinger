@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.2.aar/ba86e366d7a2f43a843816d5f08f3788/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.2.aar/ba86e366d7a2f43a843816d5f08f3788/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.2.aar/ba86e366d7a2f43a843816d5f08f3788/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.2.aar/1525d9f9326ea2314731e8c0f7593e1a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.2.aar/1525d9f9326ea2314731e8c0f7593e1a/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.2.aar/1525d9f9326ea2314731e8c0f7593e1a/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

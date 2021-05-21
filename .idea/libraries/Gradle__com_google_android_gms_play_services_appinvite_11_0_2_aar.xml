@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.2.aar/725dd0dfb6c9c6d05c629a7c09fb5a64/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.2.aar/725dd0dfb6c9c6d05c629a7c09fb5a64/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.2.aar/725dd0dfb6c9c6d05c629a7c09fb5a64/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.2.aar/d06e66e3ee689b7afd07d5320a45d8b8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.2.aar/d06e66e3ee689b7afd07d5320a45d8b8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.2.aar/d06e66e3ee689b7afd07d5320a45d8b8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

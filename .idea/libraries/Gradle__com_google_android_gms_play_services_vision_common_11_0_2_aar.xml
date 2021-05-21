@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.2.aar/66c52390dbf967a21ca18bde784bfe14/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.2.aar/66c52390dbf967a21ca18bde784bfe14/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.2.aar/66c52390dbf967a21ca18bde784bfe14/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.2.aar/6276bb8ec4101e38b150d992b3b69beb/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.2.aar/6276bb8ec4101e38b150d992b3b69beb/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.2.aar/6276bb8ec4101e38b150d992b3b69beb/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

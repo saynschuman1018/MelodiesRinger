@@ -140,6 +140,11 @@ class Adapter_Selection : RecyclerView.Adapter<Viewholder_SelectionItem>(), andr
             StartEditorActivity(position)
 
         }
+
+        // Hide Menu for View Holder Item
+        holder.mPopUpMenu?.visibility = View.INVISIBLE
+
+
         holder.mPopUpMenu?.setOnClickListener {
             onPopUpMenuClickListener(holder.mPopUpMenu!!, position)
         }

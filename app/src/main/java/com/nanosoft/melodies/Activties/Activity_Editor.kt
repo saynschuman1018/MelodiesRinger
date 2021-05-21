@@ -247,7 +247,11 @@ class Activity_Editor : AppCompatActivity(), MarkerView.MarkerListener, com.nano
 
 
     override fun onBackPressed() {
-        if (!Maskhidden) runanimation() else if (mFilename != null && !mFilename!!.isEmpty()) showExitOptionsDialog() else finish()
+        if (!Maskhidden)
+            runanimation()
+//        else if (mFilename != null && !mFilename!!.isEmpty())
+//            showExitOptionsDialog()
+        else finish()
     }
 
 
@@ -1087,12 +1091,14 @@ class Activity_Editor : AppCompatActivity(), MarkerView.MarkerListener, com.nano
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (Settings.System.canWrite(this@Activity_Editor)) {
                 //                com.zatrek.zatrekcut.Pixels.Log.d(TAG, "onClick: Permission Done");
-                runanimation()
+//                runanimation()
+                setSelectedRingBack();
             } else {
                 openAndroidPermissionsMenu()
             }
         } else {
-            runanimation()
+//            runanimation()
+            setSelectedRingBack();
         }
     }
 
@@ -1168,6 +1174,21 @@ class Activity_Editor : AppCompatActivity(), MarkerView.MarkerListener, com.nano
         }
 
     }
+
+    fun setSelectedRingBack(){
+        val dbHelper = com.nanosoft.melodies.Database.DBHelper.getInstance(this)
+        val startTime = timeToSeonds(mStartText!!.text.toString())
+        val endTime = timeToSeonds(mEndText!!.text.toString())
+        dbHelper.MarkSongAsRingBack(Editor_song_title.text.toString(), startTime = startTime, endTime = endTime)
+        finish();
+    }
+
+
+    fun timeToSeonds(time : String) : Int {
+        val tempArray = time.split(":")
+        return tempArray[0].toInt() * 60 + tempArray[1].toInt()
+    }
+
 
     fun Cutselection(which: Int) {
 

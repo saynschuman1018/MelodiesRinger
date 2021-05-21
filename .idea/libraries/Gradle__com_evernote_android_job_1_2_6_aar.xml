@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/14fc9f9149e7bd65e34ef11d06db7565/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/14fc9f9149e7bd65e34ef11d06db7565/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/14fc9f9149e7bd65e34ef11d06db7565/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/c04687684b8ece22eaa88caec6461535/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/c04687684b8ece22eaa88caec6461535/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-job-1.2.6.aar/c04687684b8ece22eaa88caec6461535/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

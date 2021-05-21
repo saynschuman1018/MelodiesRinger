@@ -2,11 +2,15 @@
   <library name="Gradle: com.birbit:android-priority-jobqueue:2.0.1@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/560948de3ac1bf25ed6a2869b0beca3e/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/97cd8a624fa2c9dc918e89082dc32937/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/560948de3ac1bf25ed6a2869b0beca3e/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/560948de3ac1bf25ed6a2869b0beca3e/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/560948de3ac1bf25ed6a2869b0beca3e/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/97cd8a624fa2c9dc918e89082dc32937/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/97cd8a624fa2c9dc918e89082dc32937/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-priority-jobqueue-2.0.1.aar/97cd8a624fa2c9dc918e89082dc32937/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

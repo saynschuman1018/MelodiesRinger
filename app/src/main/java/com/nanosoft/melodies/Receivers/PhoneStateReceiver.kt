@@ -3,20 +3,32 @@ package com.nanosoft.melodies.Receivers
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.media.AudioManager
 import android.media.MediaPlayer
+import android.os.Handler
 import android.telephony.TelephonyManager
 import android.util.Log
+import com.google.android.gms.internal.mp
+import com.nanosoft.melodies.Database.DBHelper
+import com.nanosoft.melodies.Models.MusicFile
 import java.io.IOException
-import java.lang.Exception
+
 
 class PhoneStateReceiver : BroadcastReceiver() {
-    var isCalling = false
+
     override fun onReceive(context: Context, intent: Intent) {
+
+        dbHelper = DBHelper.getInstance(context)
+
         if (intent.action == "android.intent.action.PHONE_STATE") {
             val state = intent.getStringExtra(TelephonyManager.EXTRA_STATE)
             Log.d(TAG, "PhoneStateReceiver**Call State=$state")
             if (state == TelephonyManager.EXTRA_STATE_IDLE) {
                 Log.d(TAG, "PhoneStateReceiver**Idle")
+
+                if(isPlaying)
+                    stopRingBack(true)
+
             } else if (state == TelephonyManager.EXTRA_STATE_RINGING) {
                 // Incoming call
                 val incomingNumber = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER)
@@ -26,23 +38,64 @@ class PhoneStateReceiver : BroadcastReceiver() {
                 }
             } else if (state == TelephonyManager.EXTRA_STATE_OFFHOOK) {
                 Log.d(TAG, "PhoneStateReceiver **OffHook")
-                val mp = MediaPlayer()
-                try {
-                    mp.setDataSource("/sdcard/MelodiesRinger/Baarishein-Atif-Aslam.mp3")
-                    mp.prepare()
-                    mp.start()
-                } catch (e: IOException) {
-                    e.printStackTrace()
-                }
+
+                playRingBack()
             }
         } else if (intent.action == "android.intent.action.NEW_OUTGOING_CALL") {
             // Outgoing call
             val outgoingNumber = intent.getStringExtra(Intent.EXTRA_PHONE_NUMBER)
             Log.d(TAG, "PhoneStateReceiver **Outgoing call $outgoingNumber")
 
+            if(isPlaying)
+                stopRingBack(true)
 //            setResultData(null); // Kills the outgoing call
         } else {
             Log.d(TAG, "PhoneStateReceiver **unexpected intent.action=" + intent.action)
+        }
+    }
+
+    fun playRingBack(){
+
+        stopRingBack(false)
+
+        if(selectedSongs == null)
+            selectedSongs = dbHelper?.GetSongAsRingBack()
+
+        Log.d(TAG, "Size : " + selectedSongs!!.size)
+        Log.d(TAG, "Current Index : " + currentRingBackIndex)
+
+        currentRingBackIndex = (currentRingBackIndex + 1) % selectedSongs!!.size
+
+        try {
+            val currentPlaySong = selectedSongs?.get(currentRingBackIndex)
+
+            mediaPlayer = MediaPlayer()
+            mediaPlayer?.setAudioStreamType(AudioManager.STREAM_MUSIC)
+            mediaPlayer?.setDataSource(currentPlaySong?.musicPath)
+            mediaPlayer?.prepare()
+            mediaPlayer?.seekTo(currentPlaySong?.startTime!!)
+            mediaPlayer?.start()
+
+            val handler = Handler()
+            val delay = currentPlaySong!!.endTime!!.minus(currentPlaySong!!.startTime!!)
+            handler.postDelayed(Runnable { if(isPlaying) playRingBack() }, ( delay * 1000).toLong())
+            isPlaying = true
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+    }
+
+    fun stopRingBack(finalStop : Boolean){
+        if(mediaPlayer != null){
+            isPlaying = false
+            mediaPlayer?.stop()
+            mediaPlayer?.release()
+            mediaPlayer = null
+        }
+
+        if(finalStop){
+            currentRingBackIndex = -1
+            selectedSongs = null
         }
     }
 
@@ -76,5 +129,11 @@ class PhoneStateReceiver : BroadcastReceiver() {
 
     companion object {
         var TAG = "PhoneStateReceiver"
+        var isPlaying = false
+        var mediaPlayer : MediaPlayer? = null
+        var dbHelper : DBHelper? = null
+        var currentRingBackIndex = -1
+        var selectedSongs : ArrayList<MusicFile>? = null
+
     }
 }

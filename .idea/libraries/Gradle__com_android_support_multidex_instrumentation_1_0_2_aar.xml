@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/77e8565c360dad91c961c72ab900d6d1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/77e8565c360dad91c961c72ab900d6d1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/77e8565c360dad91c961c72ab900d6d1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/fde8fed4c6ce04aa60233c2d7507ec2e/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/fde8fed4c6ce04aa60233c2d7507ec2e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multidex-instrumentation-1.0.2.aar/fde8fed4c6ce04aa60233c2d7507ec2e/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
