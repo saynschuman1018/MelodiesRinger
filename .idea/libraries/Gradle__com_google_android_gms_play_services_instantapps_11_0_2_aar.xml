@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.2.aar/696660b1542c067493b7df48cb42667f/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.2.aar/696660b1542c067493b7df48cb42667f/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.2.aar/696660b1542c067493b7df48cb42667f/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.2.aar/bfddf561511c1b1ef4f48857b9bf5e29/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.2.aar/bfddf561511c1b1ef4f48857b9bf5e29/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.2.aar/bfddf561511c1b1ef4f48857b9bf5e29/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

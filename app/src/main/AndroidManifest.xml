@@ -4,6 +4,7 @@
     package="com.nanosoft.melodies">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -25,6 +26,11 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+
+    <uses-feature android:name="android.hardware.telephony">
+    </uses-feature>
 
     <application
         android:name="com.nanosoft.melodies.UILapplication"
@@ -114,6 +120,12 @@
         <service android:name="com.nanosoft.melodies.Services.GenerateWaveFormCache" >
         </service>
 
+        <service  android:name=".Services.NotificationListenerService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
@@ -123,14 +135,6 @@
             android:resource="@color/transparent" />
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <receiver android:name=".Receivers.PhoneStateReceiver">
-            <intent-filter android:priority="0">
-                <action android:name="android.intent.action.PHONE_STATE" />
-                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
-                <action android:name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE" />
-            </intent-filter>
-        </receiver>
 
         <receiver
             android:name=".Receivers.BootStarter"

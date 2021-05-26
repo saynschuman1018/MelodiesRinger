@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/57d886ab5d8b9d182862270de506cb07/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/57d886ab5d8b9d182862270de506cb07/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/57d886ab5d8b9d182862270de506cb07/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/5a0c5d9ad010a81c76c45964a27a68fe/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/5a0c5d9ad010a81c76c45964a27a68fe/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/5a0c5d9ad010a81c76c45964a27a68fe/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

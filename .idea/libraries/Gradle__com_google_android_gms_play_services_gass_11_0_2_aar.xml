@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.2.aar/1d4ec0a38ac4bb8780eca1c82f7ce9d7/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.2.aar/1d4ec0a38ac4bb8780eca1c82f7ce9d7/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.2.aar/1d4ec0a38ac4bb8780eca1c82f7ce9d7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.2.aar/40c934db7a123ee1905006f03152eb93/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.2.aar/40c934db7a123ee1905006f03152eb93/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.2.aar/40c934db7a123ee1905006f03152eb93/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

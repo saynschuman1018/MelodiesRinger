@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.2.aar/f0185ed7964fb86cdd626c49262dc3f6/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.2.aar/f0185ed7964fb86cdd626c49262dc3f6/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.2.aar/f0185ed7964fb86cdd626c49262dc3f6/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.2.aar/c3e812a8bd2b47684988c6deb34d72f9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.2.aar/c3e812a8bd2b47684988c6deb34d72f9/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.2.aar/c3e812a8bd2b47684988c6deb34d72f9/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

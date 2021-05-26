@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.2.aar/4d08b4a0968c9c6c6300503ce58cf755/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.2.aar/4d08b4a0968c9c6c6300503ce58cf755/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.2.aar/4d08b4a0968c9c6c6300503ce58cf755/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.2.aar/bcde68e540467c490fbe01a36605d593/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.2.aar/bcde68e540467c490fbe01a36605d593/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.2.aar/bcde68e540467c490fbe01a36605d593/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

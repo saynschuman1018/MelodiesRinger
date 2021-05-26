@@ -7,6 +7,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.2.aar/6276c5de033c4c9848383ee1d30be6c3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.2.aar/6276c5de033c4c9848383ee1d30be6c3/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.2.aar/6276c5de033c4c9848383ee1d30be6c3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.2.aar/000b7802df787881df1d994670548e18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.2.aar/000b7802df787881df1d994670548e18/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.2.aar/000b7802df787881df1d994670548e18/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

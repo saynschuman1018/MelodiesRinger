@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.2.aar/9e5112118b079d427417f8876022a4df/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.2.aar/9e5112118b079d427417f8876022a4df/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.2.aar/9e5112118b079d427417f8876022a4df/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.2.aar/811aa14cdfdf831aeb4c1d4581548248/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.2.aar/811aa14cdfdf831aeb4c1d4581548248/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.2.aar/811aa14cdfdf831aeb4c1d4581548248/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.2.aar/c4c50a05d432de01941b1d4bf03208fd/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.2.aar/c4c50a05d432de01941b1d4bf03208fd/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.2.aar/c4c50a05d432de01941b1d4bf03208fd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.2.aar/d84fd5be4e9d7942efeedaf875fd9154/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.2.aar/d84fd5be4e9d7942efeedaf875fd9154/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.2.aar/d84fd5be4e9d7942efeedaf875fd9154/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

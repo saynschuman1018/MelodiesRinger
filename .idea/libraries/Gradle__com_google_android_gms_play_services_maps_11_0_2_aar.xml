@@ -7,6 +7,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.2.aar/6bb959b6815c6631dade83358c0e5f1a/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.2.aar/6bb959b6815c6631dade83358c0e5f1a/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.2.aar/6bb959b6815c6631dade83358c0e5f1a/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.2.aar/aa6374ed4da207b580aaf3651500ce46/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.2.aar/aa6374ed4da207b580aaf3651500ce46/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.2.aar/aa6374ed4da207b580aaf3651500ce46/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

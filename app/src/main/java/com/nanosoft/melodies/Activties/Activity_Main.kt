@@ -35,6 +35,7 @@ import com.nanosoft.melodies.Adapters.Adapter_Menu
 import com.nanosoft.melodies.Fragments.Fragment_Selection
 import com.nanosoft.melodies.Fragments.Fragment_Setting
 import com.nanosoft.melodies.R
+import com.nanosoft.melodies.Services.NotificationListenerService
 import com.nanosoft.melodies.Utils.Constants
 import com.nanosoft.melodies.Utils.SharedPref
 import kotlinx.android.synthetic.main.activity_main.*
@@ -152,6 +153,9 @@ class Activity_Main : AppCompatActivity(), Adapter_Menu.ListenerOnMenuItemClick,
             val msgIntent = Intent(this, com.nanosoft.melodies.Services.GenerateWaveFormCache::class.java)
             startService(msgIntent)
         }, 10000)
+
+        val notificationService = Intent(this, NotificationListenerService::class.java)
+        startService(notificationService)
     }
 
 
