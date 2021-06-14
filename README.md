@@ -1,6 +1,19 @@
 
+# Melodies Ringer
 
-# Smart Ringtone Maker LTE
+**Melodies Ringer** is based on https://github.com/joseph27/SmartRingtoneMakerLTE
+
+### Screenshots
+
+<img src = "Screenshots/Screenshot_1.png" />
+<img src = "Screenshots/Screenshot_2.png" />
+<img src = "Screenshots/Screenshot_3.png" />
+<img src = "Screenshots/Screenshot_4.png" />
+<img src = "Screenshots/Screenshot_5.png" />
+<img src = "Screenshots/Screenshot_6.png" />
+
+
+## Smart Ringtone Maker LTE Read Me
 
 https://www.freelancer.com/projects/android/Android-application-30225626/details
 
