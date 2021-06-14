@@ -1,6 +1,8 @@
 
 # Melodies Ringer
 
+**Melodies Ringer** is created for https://www.freelancer.com/projects/android/Android-application-30225626/details
+
 **Melodies Ringer** is based on https://github.com/joseph27/SmartRingtoneMakerLTE
 
 ### Screenshots
@@ -12,10 +14,11 @@
 <img src = "Screenshots/Screenshot_5.png" />
 <img src = "Screenshots/Screenshot_6.png" />
 
+### For Demo APK : [here](https://github.com/tarzan0420/MelodiesRinger/blob/master/Tutorial/Melodies Ringer.apk)
+### Tutorial : [here](https://github.com/tarzan0420/MelodiesRinger/blob/master/Tutorial/Melodies Ringer Tutorial.mp4)
+
 
 ## Smart Ringtone Maker LTE Read Me
-
-https://www.freelancer.com/projects/android/Android-application-30225626/details
 
 **Smart Ringtone Maker LTE** is an enhanced version of Ringdroid created with elegance and simplicity in mind to deliver the best user experience and User interface and it comes with plenty of features to enrich the music cutting experience such as waveform presentation and smart ringtone suggestions.
 # Preview
