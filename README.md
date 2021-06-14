@@ -14,8 +14,8 @@
 <img src = "Screenshots/Screenshot_5.png" />
 <img src = "Screenshots/Screenshot_6.png" />
 
-### For Demo APK : [here](https://github.com/tarzan0420/MelodiesRinger/blob/master/Tutorial/Melodies Ringer.apk)
-### Tutorial : [here](https://github.com/tarzan0420/MelodiesRinger/blob/master/Tutorial/Melodies Ringer Tutorial.mp4)
+For Demo APK : [here](https://github.com/tarzan0420/MelodiesRinger/blob/master/Tutorial/Melodies_Ringer.apk)
+Tutorial : [here](https://github.com/tarzan0420/MelodiesRinger/blob/master/Tutorial/Melodies_Ringer_Tutorial.mp4)
 
 
 ## Smart Ringtone Maker LTE Read Me
