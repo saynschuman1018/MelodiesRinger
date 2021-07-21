@@ -26,9 +26,7 @@ class NotificationListenerService : NotificationListenerService() {
 
         dbHelper = DBHelper.getInstance(applicationContext)
 
-        Log.i(TAG, sbn.getPackageName().toString() +
-                "\t" + sbn.getNotification().tickerText +
-                "\t" + sbn.getNotification().extras.getString(Notification.EXTRA_TEXT))
+        Log.i(TAG, sbn.getNotification().extras.getString(Notification.EXTRA_TEXT))
         val extras: Bundle = sbn.getNotification().extras
 
         if ("Ongoing call" == extras.getString(Notification.EXTRA_TEXT)) {
@@ -37,7 +35,7 @@ class NotificationListenerService : NotificationListenerService() {
             if(isPlaying)
                 stopRingBack(true)
 
-        } else if ("Dialing" == extras.getString(Notification.EXTRA_TEXT)) {
+        } else if ("Dialling" == extras.getString(Notification.EXTRA_TEXT) || extras.getString(Notification.EXTRA_TEXT).contains("Набор номера")) {
             Log.d(TAG, "Dialing")
 
             val sharedPref = SharedPref(applicationContext)
@@ -63,7 +61,7 @@ class NotificationListenerService : NotificationListenerService() {
         stopRingBack(false)
 
         if(selectedSongs == null)
-           selectedSongs = dbHelper?.GetSongAsRingBack()
+            selectedSongs = dbHelper?.GetSongAsRingBack()
 
         if(selectedSongs!!.size == 0)
             return
@@ -80,7 +78,8 @@ class NotificationListenerService : NotificationListenerService() {
             mediaPlayer?.setAudioStreamType(AudioManager.STREAM_MUSIC)
             mediaPlayer?.setDataSource(currentPlaySong?.musicPath)
             mediaPlayer?.prepare()
-            mediaPlayer?.seekTo(currentPlaySong?.startTime!!)
+            Log.d(TAG, "Start time " + currentPlaySong?.startTime!! )
+            mediaPlayer?.seekTo(currentPlaySong?.startTime!! * 1000)
             mediaPlayer?.start()
 
             val handler = Handler()
@@ -114,18 +113,18 @@ class NotificationListenerService : NotificationListenerService() {
         mOldVolumn = am.getStreamVolume(AudioManager.STREAM_MUSIC)
 
         am.setStreamVolume(
-                AudioManager.STREAM_MUSIC,
-                am.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
-                0)
+            AudioManager.STREAM_SYSTEM,
+            0,
+            0)
     }
 
     fun restoreStreamVolumn(){
         val am = mContext?.getSystemService(Context.AUDIO_SERVICE) as AudioManager
 
         am.setStreamVolume(
-                AudioManager.STREAM_MUSIC,
-                mOldVolumn,
-                0)
+            AudioManager.STREAM_MUSIC,
+            mOldVolumn,
+            0)
     }
 
 

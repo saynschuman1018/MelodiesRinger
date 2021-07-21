@@ -11,7 +11,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/picasso-transformations-2.1.2.aar/b774fee07828fb9d4e544e27c11b1b88/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/picasso-transformations-2.1.2.aar/b774fee07828fb9d4e544e27c11b1b88/jars/classes.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/picasso-transformations/2.1.2/243fba72d6052250224687090223cf6d605c5d0d/picasso-transformations-2.1.2-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/picasso-transformations/2.1.2/d0870d7c98c00d9fe77bb1b9fdc364250fe05551/picasso-transformations-2.1.2-sources.jar!/" />
     </SOURCES>

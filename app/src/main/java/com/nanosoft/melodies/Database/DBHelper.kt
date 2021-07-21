@@ -25,7 +25,7 @@ import java.util.*
 /**
  * Created by Joseph27 on 2/28/16.
  */
-class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 1) {
+class DBHelper(internal var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 2) {
 
     internal var TAG = "SQLiteOpenHelper"
     internal var sharedPref: SharedPref
