@@ -1,8 +1,6 @@
 
 # Melodies Ringer
 
-**Melodies Ringer** is created for https://www.freelancer.com/projects/android/Android-application-30225626/details
-
 **Melodies Ringer** is based on https://github.com/joseph27/SmartRingtoneMakerLTE
 
 ### Screenshots
