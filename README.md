@@ -12,9 +12,6 @@
 <img src = "Screenshots/Screenshot_5.png" />
 <img src = "Screenshots/Screenshot_6.png" />
 
-### For Demo APK : [here](https://github.com/truedev0420/MelodiesRinger/blob/master/Tutorial/Melodies_Ringer.apk)
-### Tutorial : [here](https://giniithub.com/truedev0420/MelodiesRinger/blob/master/Tutorial/Melodies_Ringer_Tutorial.mp4)
-
 ### Built With
 - [RingDroid](https://github.com/google/ringdroid)
 - [EventBus](https://github.com/greenrobot/EventBus)
