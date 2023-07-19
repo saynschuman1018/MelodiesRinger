@@ -1,9 +1,9 @@
 
-# Melodies Ringer
+## Melodies Ringer
 
 **Melodies Ringer** is based on https://github.com/joseph27/SmartRingtoneMakerLTE
 
-### Screenshots
+#### Screenshots
 
 <img src = "Screenshots/Screenshot_1.png" />
 <img src = "Screenshots/Screenshot_2.png" />
@@ -12,7 +12,7 @@
 <img src = "Screenshots/Screenshot_5.png" />
 <img src = "Screenshots/Screenshot_6.png" />
 
-### Built With
+#### Built With
 - [RingDroid](https://github.com/google/ringdroid)
 - [EventBus](https://github.com/greenrobot/EventBus)
 - [Android-job](https://github.com/evernote/android-job)
